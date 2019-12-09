@@ -1,0 +1,10 @@
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\bin\Debug\HW5.exe.config
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\bin\Debug\HW5.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\bin\Debug\HW5.pdb
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.csprojAssemblyReference.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.form_compound_sum.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.Properties.Resources.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.csproj.GenerateResource.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW5\obj\Debug\HW5.pdb

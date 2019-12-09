@@ -1,0 +1,10 @@
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\bin\Debug\HW8.exe.config
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\bin\Debug\HW8.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\bin\Debug\HW8.pdb
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.csprojAssemblyReference.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.Form1.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.Properties.Resources.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.csproj.GenerateResource.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW8\HW8\HW8\obj\Debug\HW8.pdb

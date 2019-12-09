@@ -1,0 +1,7 @@
+C:\Users\HSNL\source\repos\HW4\HW04_01\obj\Debug\HW04_01.csprojAssemblyReference.cache
+C:\Users\HSNL\source\repos\HW4\HW04_01\obj\Debug\HW04_01.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\source\repos\HW4\HW04_01\bin\Debug\HW04_01.exe.config
+C:\Users\HSNL\source\repos\HW4\HW04_01\bin\Debug\HW04_01.exe
+C:\Users\HSNL\source\repos\HW4\HW04_01\bin\Debug\HW04_01.pdb
+C:\Users\HSNL\source\repos\HW4\HW04_01\obj\Debug\HW04_01.exe
+C:\Users\HSNL\source\repos\HW4\HW04_01\obj\Debug\HW04_01.pdb

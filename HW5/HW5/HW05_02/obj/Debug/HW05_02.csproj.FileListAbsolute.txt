@@ -1,0 +1,10 @@
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\bin\Debug\HW05_02.exe.config
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\bin\Debug\HW05_02.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\bin\Debug\HW05_02.pdb
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.csprojAssemblyReference.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.FormLogin.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.Properties.Resources.resources
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.csproj.GenerateResource.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.exe
+C:\Users\HSNL\Desktop\碩班課程\C#程式設計\HW5\HW5\HW05_02\obj\Debug\HW05_02.pdb

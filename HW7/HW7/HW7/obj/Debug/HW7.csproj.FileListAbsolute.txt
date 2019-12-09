@@ -1,0 +1,10 @@
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.csprojAssemblyReference.cache
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.Form1.resources
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.Properties.Resources.resources
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.csproj.GenerateResource.cache
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\bin\Debug\HW7.exe.config
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\bin\Debug\HW7.exe
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\bin\Debug\HW7.pdb
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.exe
+C:\Users\HSNL\source\repos\Csharp\HW7\HW7\HW7\obj\Debug\HW7.pdb

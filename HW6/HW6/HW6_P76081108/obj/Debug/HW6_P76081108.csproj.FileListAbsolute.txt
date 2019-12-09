@@ -1,0 +1,10 @@
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\bin\Debug\HW6_P76081108.exe.config
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\bin\Debug\HW6_P76081108.exe
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\bin\Debug\HW6_P76081108.pdb
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.csprojAssemblyReference.cache
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.Form1.resources
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.Properties.Resources.resources
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.csproj.GenerateResource.cache
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.csproj.CoreCompileInputs.cache
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.exe
+C:\Users\HSNL\source\repos\Csharp\HW6\HW6_P76081108\obj\Debug\HW6_P76081108.pdb
