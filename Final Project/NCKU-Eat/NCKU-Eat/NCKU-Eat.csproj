@@ -102,6 +102,9 @@
     <Compile Include="餐廳.cs">
       <DependentUpon>RestaurantModel1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllRestaurant.resx">
+      <DependentUpon>AllRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>

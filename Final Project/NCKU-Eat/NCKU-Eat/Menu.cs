@@ -16,5 +16,11 @@ namespace NCKU_Eat
         {
             InitializeComponent();
         }
+
+        private void btn_AllRestaurant_Click(object sender, EventArgs e)
+        {
+            AllRestaurant allRestaurant = new AllRestaurant();
+            allRestaurant.Show();
+        }
     }
 }

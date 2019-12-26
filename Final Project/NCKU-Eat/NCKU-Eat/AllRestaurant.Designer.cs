@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.DGV_AllRestaurant = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_AllRestaurant)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // DGV_AllRestaurant
+            // 
+            this.DGV_AllRestaurant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_AllRestaurant.Location = new System.Drawing.Point(12, 12);
+            this.DGV_AllRestaurant.Name = "DGV_AllRestaurant";
+            this.DGV_AllRestaurant.RowTemplate.Height = 24;
+            this.DGV_AllRestaurant.Size = new System.Drawing.Size(736, 426);
+            this.DGV_AllRestaurant.TabIndex = 0;
+            // 
+            // AllRestaurant
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(759, 450);
+            this.Controls.Add(this.DGV_AllRestaurant);
+            this.Name = "AllRestaurant";
             this.Text = "AllRestaurant";
+            this.Load += new System.EventHandler(this.AllRestaurant_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_AllRestaurant)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView DGV_AllRestaurant;
     }
 }

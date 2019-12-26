@@ -135,6 +135,7 @@
             this.btn_AllRestaurant.TabIndex = 9;
             this.btn_AllRestaurant.Text = "顯示所有餐廳";
             this.btn_AllRestaurant.UseVisualStyleBackColor = true;
+            this.btn_AllRestaurant.Click += new System.EventHandler(this.btn_AllRestaurant_Click);
             // 
             // Txt_Restaurant_Name
             // 
