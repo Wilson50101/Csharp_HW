@@ -12,6 +12,9 @@ namespace NCKU_Eating
 {
     public partial class Form1 : Form
     {
+
+        //成大資工系館位置
+        PointF start = new PointF(22.996992f, 120.221510f);
         public Form1()
         {
             InitializeComponent();
