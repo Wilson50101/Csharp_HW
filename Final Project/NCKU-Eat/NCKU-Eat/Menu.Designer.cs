@@ -44,12 +44,14 @@
             this.Txt_Longitude = new System.Windows.Forms.TextBox();
             this.Txt_Distance = new System.Windows.Forms.TextBox();
             this.Txt_Category = new System.Windows.Forms.TextBox();
+            this.Lbl_RestaurantID = new System.Windows.Forms.Label();
+            this.Txt_RestaurantID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Lbl_restaurant_name
             // 
             this.Lbl_restaurant_name.AutoSize = true;
-            this.Lbl_restaurant_name.Location = new System.Drawing.Point(11, 21);
+            this.Lbl_restaurant_name.Location = new System.Drawing.Point(14, 61);
             this.Lbl_restaurant_name.Name = "Lbl_restaurant_name";
             this.Lbl_restaurant_name.Size = new System.Drawing.Size(32, 12);
             this.Lbl_restaurant_name.TabIndex = 0;
@@ -58,7 +60,7 @@
             // Lbl_Address
             // 
             this.Lbl_Address.AutoSize = true;
-            this.Lbl_Address.Location = new System.Drawing.Point(11, 56);
+            this.Lbl_Address.Location = new System.Drawing.Point(14, 96);
             this.Lbl_Address.Name = "Lbl_Address";
             this.Lbl_Address.Size = new System.Drawing.Size(32, 12);
             this.Lbl_Address.TabIndex = 1;
@@ -67,7 +69,7 @@
             // Lbl_Latitude
             // 
             this.Lbl_Latitude.AutoSize = true;
-            this.Lbl_Latitude.Location = new System.Drawing.Point(11, 101);
+            this.Lbl_Latitude.Location = new System.Drawing.Point(14, 141);
             this.Lbl_Latitude.Name = "Lbl_Latitude";
             this.Lbl_Latitude.Size = new System.Drawing.Size(32, 12);
             this.Lbl_Latitude.TabIndex = 2;
@@ -76,7 +78,7 @@
             // Lbl_Longitude
             // 
             this.Lbl_Longitude.AutoSize = true;
-            this.Lbl_Longitude.Location = new System.Drawing.Point(11, 141);
+            this.Lbl_Longitude.Location = new System.Drawing.Point(14, 181);
             this.Lbl_Longitude.Name = "Lbl_Longitude";
             this.Lbl_Longitude.Size = new System.Drawing.Size(32, 12);
             this.Lbl_Longitude.TabIndex = 3;
@@ -85,7 +87,7 @@
             // Lbl_Distance
             // 
             this.Lbl_Distance.AutoSize = true;
-            this.Lbl_Distance.Location = new System.Drawing.Point(11, 183);
+            this.Lbl_Distance.Location = new System.Drawing.Point(14, 223);
             this.Lbl_Distance.Name = "Lbl_Distance";
             this.Lbl_Distance.Size = new System.Drawing.Size(55, 12);
             this.Lbl_Distance.TabIndex = 4;
@@ -94,7 +96,7 @@
             // Lbl_Category
             // 
             this.Lbl_Category.AutoSize = true;
-            this.Lbl_Category.Location = new System.Drawing.Point(11, 227);
+            this.Lbl_Category.Location = new System.Drawing.Point(14, 267);
             this.Lbl_Category.Name = "Lbl_Category";
             this.Lbl_Category.Size = new System.Drawing.Size(56, 12);
             this.Lbl_Category.TabIndex = 5;
@@ -102,34 +104,37 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(200, 17);
+            this.btn_Add.Location = new System.Drawing.Point(201, 20);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(96, 23);
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "新增餐廳";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Remove
             // 
-            this.btn_Remove.Location = new System.Drawing.Point(200, 56);
+            this.btn_Remove.Location = new System.Drawing.Point(201, 59);
             this.btn_Remove.Name = "btn_Remove";
             this.btn_Remove.Size = new System.Drawing.Size(96, 23);
             this.btn_Remove.TabIndex = 7;
             this.btn_Remove.Text = "移除餐廳";
             this.btn_Remove.UseVisualStyleBackColor = true;
+            this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
             // btn_Update
             // 
-            this.btn_Update.Location = new System.Drawing.Point(200, 101);
+            this.btn_Update.Location = new System.Drawing.Point(201, 104);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(96, 23);
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "更新餐廳";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_AllRestaurant
             // 
-            this.btn_AllRestaurant.Location = new System.Drawing.Point(200, 141);
+            this.btn_AllRestaurant.Location = new System.Drawing.Point(201, 144);
             this.btn_AllRestaurant.Name = "btn_AllRestaurant";
             this.btn_AllRestaurant.Size = new System.Drawing.Size(96, 23);
             this.btn_AllRestaurant.TabIndex = 9;
@@ -139,51 +144,69 @@
             // 
             // Txt_Restaurant_Name
             // 
-            this.Txt_Restaurant_Name.Location = new System.Drawing.Point(73, 18);
+            this.Txt_Restaurant_Name.Location = new System.Drawing.Point(76, 58);
             this.Txt_Restaurant_Name.Name = "Txt_Restaurant_Name";
             this.Txt_Restaurant_Name.Size = new System.Drawing.Size(100, 22);
             this.Txt_Restaurant_Name.TabIndex = 11;
             // 
             // Txt_Address
             // 
-            this.Txt_Address.Location = new System.Drawing.Point(73, 53);
+            this.Txt_Address.Location = new System.Drawing.Point(76, 93);
             this.Txt_Address.Name = "Txt_Address";
             this.Txt_Address.Size = new System.Drawing.Size(100, 22);
             this.Txt_Address.TabIndex = 12;
             // 
             // Txt_Latitude
             // 
-            this.Txt_Latitude.Location = new System.Drawing.Point(73, 98);
+            this.Txt_Latitude.Location = new System.Drawing.Point(76, 138);
             this.Txt_Latitude.Name = "Txt_Latitude";
             this.Txt_Latitude.Size = new System.Drawing.Size(100, 22);
             this.Txt_Latitude.TabIndex = 13;
             // 
             // Txt_Longitude
             // 
-            this.Txt_Longitude.Location = new System.Drawing.Point(73, 138);
+            this.Txt_Longitude.Location = new System.Drawing.Point(76, 178);
             this.Txt_Longitude.Name = "Txt_Longitude";
             this.Txt_Longitude.Size = new System.Drawing.Size(100, 22);
             this.Txt_Longitude.TabIndex = 14;
             // 
             // Txt_Distance
             // 
-            this.Txt_Distance.Location = new System.Drawing.Point(73, 180);
+            this.Txt_Distance.Location = new System.Drawing.Point(76, 220);
             this.Txt_Distance.Name = "Txt_Distance";
             this.Txt_Distance.Size = new System.Drawing.Size(100, 22);
             this.Txt_Distance.TabIndex = 15;
             // 
             // Txt_Category
             // 
-            this.Txt_Category.Location = new System.Drawing.Point(73, 224);
+            this.Txt_Category.Location = new System.Drawing.Point(76, 264);
             this.Txt_Category.Name = "Txt_Category";
             this.Txt_Category.Size = new System.Drawing.Size(100, 22);
             this.Txt_Category.TabIndex = 16;
+            // 
+            // Lbl_RestaurantID
+            // 
+            this.Lbl_RestaurantID.AutoSize = true;
+            this.Lbl_RestaurantID.Location = new System.Drawing.Point(14, 25);
+            this.Lbl_RestaurantID.Name = "Lbl_RestaurantID";
+            this.Lbl_RestaurantID.Size = new System.Drawing.Size(32, 12);
+            this.Lbl_RestaurantID.TabIndex = 17;
+            this.Lbl_RestaurantID.Text = "編號:";
+            // 
+            // Txt_RestaurantID
+            // 
+            this.Txt_RestaurantID.Location = new System.Drawing.Point(76, 22);
+            this.Txt_RestaurantID.Name = "Txt_RestaurantID";
+            this.Txt_RestaurantID.Size = new System.Drawing.Size(100, 22);
+            this.Txt_RestaurantID.TabIndex = 18;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Txt_RestaurantID);
+            this.Controls.Add(this.Lbl_RestaurantID);
             this.Controls.Add(this.Txt_Category);
             this.Controls.Add(this.Txt_Distance);
             this.Controls.Add(this.Txt_Longitude);
@@ -225,6 +248,8 @@
         private System.Windows.Forms.TextBox Txt_Longitude;
         private System.Windows.Forms.TextBox Txt_Distance;
         private System.Windows.Forms.TextBox Txt_Category;
+        private System.Windows.Forms.Label Lbl_RestaurantID;
+        private System.Windows.Forms.TextBox Txt_RestaurantID;
     }
 }
 
