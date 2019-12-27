@@ -16,7 +16,7 @@ namespace NCKU_Eat
         //地球半徑，單位:m
         private const double EARTH_RADIUS = 6378137;
         //資工系館的經緯度
-        PointF PositionCSIE = new PointF(22.996992f, 120.221510f);
+        PointF PositionCSIE = new PointF(120.221510f,22.996992f);
         //建立RetaurantEntities物件,此物件可以管理Restaurant.mdf資料庫
         RestaurantEntities resDB = new RestaurantEntities();
         public Menu()
@@ -26,8 +26,8 @@ namespace NCKU_Eat
 
         //計算兩點距離位置，單位：m
         //公式為google提供誤差<0.2m
-        //(lng1,lat1)=第一點之經緯度
-        //(lng2,lat2)=第二點之經緯度
+        //(lat1,lng1)=第一點之經緯度
+        //(lat2,lng2)=第二點之經緯度
         public static float GetDistance(float lat1, float lng1, float lat2,float lng2)
         {
             float radLat1 = Rad(lat1);
