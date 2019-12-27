@@ -15,8 +15,8 @@ namespace NCKU_Eat
     {
         //地球半徑，單位:m
         private const double EARTH_RADIUS = 6378137;
-        //資工系館的經緯度
-        PointF PositionCSIE = new PointF(120.221510f,22.996992f);
+        //資工系館的緯度/經度
+        PointF PositionCSIE = new PointF(22.996992f,120.221510f);
         //建立RetaurantEntities物件,此物件可以管理Restaurant.mdf資料庫
         RestaurantEntities resDB = new RestaurantEntities();
         public Menu()
@@ -26,8 +26,8 @@ namespace NCKU_Eat
 
         //計算兩點距離位置，單位：m
         //公式為google提供誤差<0.2m
-        //(lat1,lng1)=第一點之經緯度
-        //(lat2,lng2)=第二點之經緯度
+        //(lat1,lng1)=第一點之緯經度
+        //(lat2,lng2)=第二點之緯經度
         public static float GetDistance(float lat1, float lng1, float lat2,float lng2)
         {
             float radLat1 = Rad(lat1);
@@ -59,9 +59,9 @@ namespace NCKU_Eat
                 newres.Id = int.Parse(Txt_RestaurantID.Text);
                 newres.店名 = Txt_Restaurant_Name.Text;
                 newres.地址 = Txt_Address.Text;
-                newres.經度 = System.Math.Round(float.Parse(Txt_Latitude.Text),6);
-                newres.緯度 = System.Math.Round(float.Parse(Txt_Longitude.Text),6); 
-                newres.距離 = System.Math.Round(GetDistance((float)newres.經度, (float)newres.緯度, PositionCSIE.X, PositionCSIE.Y),2);
+                newres.緯度 = System.Math.Round(float.Parse(Txt_Lag.Text),6);
+                newres.經度 = System.Math.Round(float.Parse(Txt_Lng.Text),6);
+                newres.距離 = System.Math.Round(GetDistance((float)newres.緯度, (float)newres.經度, PositionCSIE.X, PositionCSIE.Y),2);
                 newres.餐廳類別 = Txt_Category.Text;
                 resDB.餐廳.Add(newres);
                 resDB.SaveChanges();
@@ -104,9 +104,9 @@ namespace NCKU_Eat
                     return;
                 updated.店名 = Txt_Restaurant_Name.Text;
                 updated.地址 = Txt_Address.Text;
-                updated.經度 = System.Math.Round(float.Parse(Txt_Latitude.Text), 6);
-                updated.緯度 = System.Math.Round(float.Parse(Txt_Longitude.Text), 6);
-                updated.距離 = System.Math.Round(GetDistance((float)updated.經度, (float)updated.緯度, PositionCSIE.X, PositionCSIE.Y), 2);
+                updated.緯度 = System.Math.Round(float.Parse(Txt_Lag.Text), 6);
+                updated.經度 = System.Math.Round(float.Parse(Txt_Lng.Text), 6);
+                updated.距離 = System.Math.Round(GetDistance((float)updated.緯度, (float)updated.經度, PositionCSIE.X, PositionCSIE.Y), 2);
                 updated.餐廳類別 = Txt_Category.Text;
                 resDB.SaveChanges();
                 MessageBox.Show("餐廳:" + updated.店名 + "已被更新", "已更新餐廳", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
@@ -140,6 +140,33 @@ namespace NCKU_Eat
                                       select r).Take(1);
                 DGV_selected_restaurant.DataSource = selected_result.ToList();
             }
+        }
+
+        private void btn_show_on_map_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var toshowed = resDB.餐廳.Where(r => r.Id.ToString() == Txt_RestaurantID.Text).FirstOrDefault();
+                if (toshowed == null)
+                    return;
+                Txt_Restaurant_Name.Text=toshowed.店名;
+                Txt_Address.Text = toshowed.地址;
+                Txt_Lng.Text = toshowed.經度.ToString();
+                Txt_Lag.Text = toshowed.緯度.ToString();
+                Txt_Distance.Text=toshowed.距離.ToString();
+                Txt_Category.Text = toshowed.餐廳類別;
+                callwebbrowser( Txt_Lag.Text,Txt_Lng.Text); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void callwebbrowser(string lag, string lng)
+        {
+            string url = "http://maps.google.com/maps?q=" + lag + "%2c" + lng;
+            web_map.Url = new Uri(url);
+            
         }
     }
 }
