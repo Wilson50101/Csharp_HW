@@ -140,7 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Restaurant.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="RestaurantModel1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -153,7 +153,7 @@
       <LastGenOutput>RestaurantModel1.cs</LastGenOutput>
     </Content>
     <Content Include="Restaurant_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Restaurant.mdf</DependentUpon>
     </Content>
   </ItemGroup>
