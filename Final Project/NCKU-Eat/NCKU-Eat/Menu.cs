@@ -129,6 +129,12 @@ namespace NCKU_Eat
                                       orderby r.距離
                                       select r;
                 DGV_selected_restaurant.DataSource = selected_result.ToList();
+                MessageBox.Show("只會顯示第一個餐廳之位置","提示",MessageBoxButtons.OKCancel,MessageBoxIcon.Asterisk);
+                var showed = (from r in selected_result select r).Take(1);
+                foreach (var s in showed)
+                {
+                    callwebbrowser(s.緯度.ToString(), s.經度.ToString());
+                }
             }
             if (rdb_select_random.Checked == true)
             {
@@ -138,6 +144,10 @@ namespace NCKU_Eat
                                       orderby Guid.NewGuid()
                                       select r).Take(1);
                 DGV_selected_restaurant.DataSource = selected_result.ToList();
+                foreach (var s in selected_result)
+                {
+                    callwebbrowser(s.緯度.ToString(),s.經度.ToString());
+                }
             }
         }
 

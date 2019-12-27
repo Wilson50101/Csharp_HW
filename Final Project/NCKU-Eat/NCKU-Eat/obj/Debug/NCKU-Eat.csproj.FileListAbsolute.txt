@@ -36,3 +36,4 @@ C:\Users\HSNL\Desktop\train\Csharp_HW\Final Project\NCKU-Eat\NCKU-Eat\bin\Debug\
 C:\Users\HSNL\Desktop\train\Csharp_HW\Final Project\NCKU-Eat\NCKU-Eat\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\HSNL\Desktop\train\Csharp_HW\Final Project\NCKU-Eat\NCKU-Eat\bin\Debug\zh-Hant\EntityFramework.resources.dll
 C:\Users\HSNL\Desktop\train\Csharp_HW\Final Project\NCKU-Eat\NCKU-Eat\obj\Debug\NCKU-Eat.csproj.CopyComplete
+C:\Users\HSNL\Desktop\Csharp_HW\Final Project\NCKU-Eat\NCKU-Eat\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
