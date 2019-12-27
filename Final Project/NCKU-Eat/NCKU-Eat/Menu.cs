@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace NCKU_Eat
 {
-
     public partial class Menu : Form
     {
         //地球半徑，單位:m
@@ -59,7 +58,7 @@ namespace NCKU_Eat
                 newres.Id = int.Parse(Txt_RestaurantID.Text);
                 newres.店名 = Txt_Restaurant_Name.Text;
                 newres.地址 = Txt_Address.Text;
-                newres.緯度 = System.Math.Round(float.Parse(Txt_Lag.Text),6);
+                newres.緯度 = System.Math.Round(float.Parse(Txt_Lat.Text),6);
                 newres.經度 = System.Math.Round(float.Parse(Txt_Lng.Text),6);
                 newres.距離 = System.Math.Round(GetDistance((float)newres.緯度, (float)newres.經度, PositionCSIE.X, PositionCSIE.Y),2);
                 newres.餐廳類別 = Txt_Category.Text;
@@ -104,7 +103,7 @@ namespace NCKU_Eat
                     return;
                 updated.店名 = Txt_Restaurant_Name.Text;
                 updated.地址 = Txt_Address.Text;
-                updated.緯度 = System.Math.Round(float.Parse(Txt_Lag.Text), 6);
+                updated.緯度 = System.Math.Round(float.Parse(Txt_Lat.Text), 6);
                 updated.經度 = System.Math.Round(float.Parse(Txt_Lng.Text), 6);
                 updated.距離 = System.Math.Round(GetDistance((float)updated.緯度, (float)updated.經度, PositionCSIE.X, PositionCSIE.Y), 2);
                 updated.餐廳類別 = Txt_Category.Text;
@@ -152,10 +151,10 @@ namespace NCKU_Eat
                 Txt_Restaurant_Name.Text=toshowed.店名;
                 Txt_Address.Text = toshowed.地址;
                 Txt_Lng.Text = toshowed.經度.ToString();
-                Txt_Lag.Text = toshowed.緯度.ToString();
+                Txt_Lat.Text = toshowed.緯度.ToString();
                 Txt_Distance.Text=toshowed.距離.ToString();
                 Txt_Category.Text = toshowed.餐廳類別;
-                callwebbrowser( Txt_Lag.Text,Txt_Lng.Text); 
+                callwebbrowser( Txt_Lat.Text,Txt_Lng.Text); 
             }
             catch (Exception ex)
             {
@@ -166,7 +165,11 @@ namespace NCKU_Eat
         {
             string url = "http://maps.google.com/maps?q=" + lag + "%2c" + lng;
             web_map.Url = new Uri(url);
-            
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

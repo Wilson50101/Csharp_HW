@@ -31,7 +31,7 @@
             this.Lbl_restaurant_name = new System.Windows.Forms.Label();
             this.Lbl_Address = new System.Windows.Forms.Label();
             this.Lbl_Lng = new System.Windows.Forms.Label();
-            this.Lbl_Lag = new System.Windows.Forms.Label();
+            this.Lbl_Lat = new System.Windows.Forms.Label();
             this.Lbl_Distance = new System.Windows.Forms.Label();
             this.Lbl_Category = new System.Windows.Forms.Label();
             this.btn_Add = new System.Windows.Forms.Button();
@@ -41,12 +41,13 @@
             this.Txt_Restaurant_Name = new System.Windows.Forms.TextBox();
             this.Txt_Address = new System.Windows.Forms.TextBox();
             this.Txt_Lng = new System.Windows.Forms.TextBox();
-            this.Txt_Lag = new System.Windows.Forms.TextBox();
+            this.Txt_Lat = new System.Windows.Forms.TextBox();
             this.Txt_Distance = new System.Windows.Forms.TextBox();
             this.Txt_Category = new System.Windows.Forms.TextBox();
             this.Lbl_RestaurantID = new System.Windows.Forms.Label();
             this.Txt_RestaurantID = new System.Windows.Forms.TextBox();
             this.pnl_operation = new System.Windows.Forms.Panel();
+            this.btn_show_on_map = new System.Windows.Forms.Button();
             this.Lbl_select_distance_lessthan = new System.Windows.Forms.Label();
             this.Txt_condition_distance = new System.Windows.Forms.TextBox();
             this.DGV_selected_restaurant = new System.Windows.Forms.DataGridView();
@@ -55,7 +56,6 @@
             this.groupBox_selection = new System.Windows.Forms.GroupBox();
             this.btn_select = new System.Windows.Forms.Button();
             this.web_map = new System.Windows.Forms.WebBrowser();
-            this.btn_show_on_map = new System.Windows.Forms.Button();
             this.pnl_operation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_selected_restaurant)).BeginInit();
             this.groupBox_selection.SuspendLayout();
@@ -88,14 +88,14 @@
             this.Lbl_Lng.TabIndex = 2;
             this.Lbl_Lng.Text = "經度:";
             // 
-            // Lbl_Lag
+            // Lbl_Lat
             // 
-            this.Lbl_Lag.AutoSize = true;
-            this.Lbl_Lag.Location = new System.Drawing.Point(6, 173);
-            this.Lbl_Lag.Name = "Lbl_Lag";
-            this.Lbl_Lag.Size = new System.Drawing.Size(32, 12);
-            this.Lbl_Lag.TabIndex = 3;
-            this.Lbl_Lag.Text = "緯度:";
+            this.Lbl_Lat.AutoSize = true;
+            this.Lbl_Lat.Location = new System.Drawing.Point(6, 173);
+            this.Lbl_Lat.Name = "Lbl_Lat";
+            this.Lbl_Lat.Size = new System.Drawing.Size(32, 12);
+            this.Lbl_Lat.TabIndex = 3;
+            this.Lbl_Lat.Text = "緯度:";
             // 
             // Lbl_Distance
             // 
@@ -176,12 +176,12 @@
             this.Txt_Lng.Size = new System.Drawing.Size(100, 22);
             this.Txt_Lng.TabIndex = 13;
             // 
-            // Txt_Lag
+            // Txt_Lat
             // 
-            this.Txt_Lag.Location = new System.Drawing.Point(68, 170);
-            this.Txt_Lag.Name = "Txt_Lag";
-            this.Txt_Lag.Size = new System.Drawing.Size(100, 22);
-            this.Txt_Lag.TabIndex = 14;
+            this.Txt_Lat.Location = new System.Drawing.Point(68, 170);
+            this.Txt_Lat.Name = "Txt_Lat";
+            this.Txt_Lat.Size = new System.Drawing.Size(100, 22);
+            this.Txt_Lat.TabIndex = 14;
             // 
             // Txt_Distance
             // 
@@ -225,8 +225,8 @@
             this.pnl_operation.Controls.Add(this.Txt_Category);
             this.pnl_operation.Controls.Add(this.Lbl_Lng);
             this.pnl_operation.Controls.Add(this.Txt_Distance);
-            this.pnl_operation.Controls.Add(this.Lbl_Lag);
-            this.pnl_operation.Controls.Add(this.Txt_Lag);
+            this.pnl_operation.Controls.Add(this.Lbl_Lat);
+            this.pnl_operation.Controls.Add(this.Txt_Lat);
             this.pnl_operation.Controls.Add(this.Lbl_Distance);
             this.pnl_operation.Controls.Add(this.Txt_Lng);
             this.pnl_operation.Controls.Add(this.Lbl_Category);
@@ -239,6 +239,16 @@
             this.pnl_operation.Name = "pnl_operation";
             this.pnl_operation.Size = new System.Drawing.Size(300, 303);
             this.pnl_operation.TabIndex = 19;
+            // 
+            // btn_show_on_map
+            // 
+            this.btn_show_on_map.Location = new System.Drawing.Point(193, 168);
+            this.btn_show_on_map.Name = "btn_show_on_map";
+            this.btn_show_on_map.Size = new System.Drawing.Size(96, 23);
+            this.btn_show_on_map.TabIndex = 19;
+            this.btn_show_on_map.Text = "在地圖中顯示";
+            this.btn_show_on_map.UseVisualStyleBackColor = true;
+            this.btn_show_on_map.Click += new System.EventHandler(this.btn_show_on_map_Click);
             // 
             // Lbl_select_distance_lessthan
             // 
@@ -316,16 +326,6 @@
             this.web_map.Size = new System.Drawing.Size(757, 311);
             this.web_map.TabIndex = 26;
             // 
-            // btn_show_on_map
-            // 
-            this.btn_show_on_map.Location = new System.Drawing.Point(193, 168);
-            this.btn_show_on_map.Name = "btn_show_on_map";
-            this.btn_show_on_map.Size = new System.Drawing.Size(96, 23);
-            this.btn_show_on_map.TabIndex = 19;
-            this.btn_show_on_map.Text = "在地圖中顯示";
-            this.btn_show_on_map.UseVisualStyleBackColor = true;
-            this.btn_show_on_map.Click += new System.EventHandler(this.btn_show_on_map_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -340,6 +340,7 @@
             this.Controls.Add(this.pnl_operation);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.pnl_operation.ResumeLayout(false);
             this.pnl_operation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_selected_restaurant)).EndInit();
@@ -355,7 +356,7 @@
         private System.Windows.Forms.Label Lbl_restaurant_name;
         private System.Windows.Forms.Label Lbl_Address;
         private System.Windows.Forms.Label Lbl_Lng;
-        private System.Windows.Forms.Label Lbl_Lag;
+        private System.Windows.Forms.Label Lbl_Lat;
         private System.Windows.Forms.Label Lbl_Distance;
         private System.Windows.Forms.Label Lbl_Category;
         private System.Windows.Forms.Button btn_Add;
@@ -365,7 +366,7 @@
         private System.Windows.Forms.TextBox Txt_Restaurant_Name;
         private System.Windows.Forms.TextBox Txt_Address;
         private System.Windows.Forms.TextBox Txt_Lng;
-        private System.Windows.Forms.TextBox Txt_Lag;
+        private System.Windows.Forms.TextBox Txt_Lat;
         private System.Windows.Forms.TextBox Txt_Distance;
         private System.Windows.Forms.TextBox Txt_Category;
         private System.Windows.Forms.Label Lbl_RestaurantID;
