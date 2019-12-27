@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RestaurantModelStoreContainer" CdmEntityContainer="RestaurantEntities">
+    <EntitySetMapping Name="餐廳">
+      <EntityTypeMapping TypeName="RestaurantModel.餐廳">
+        <MappingFragment StoreEntitySet="餐廳">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="店名" ColumnName="店名" />
+          <ScalarProperty Name="地址" ColumnName="地址" />
+          <ScalarProperty Name="經度" ColumnName="經度" />
+          <ScalarProperty Name="緯度" ColumnName="緯度" />
+          <ScalarProperty Name="距離" ColumnName="距離" />
+          <ScalarProperty Name="餐廳類別" ColumnName="餐廳類別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
