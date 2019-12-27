@@ -133,6 +133,7 @@ namespace NCKU_Eat
             }
             if (rdb_select_random.Checked == true)
             {
+                //隨機&取前n筆資料的方法:https://www.cnblogs.com/yuandotnet/archive/2012/06/07/2539938.html
                 var selected_result = (from r in resDB.餐廳
                                       where r.距離 <= distance_condition
                                       orderby Guid.NewGuid()
