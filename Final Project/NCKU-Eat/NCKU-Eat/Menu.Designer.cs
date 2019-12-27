@@ -47,7 +47,16 @@
             this.Lbl_RestaurantID = new System.Windows.Forms.Label();
             this.Txt_RestaurantID = new System.Windows.Forms.TextBox();
             this.pnl_operation = new System.Windows.Forms.Panel();
+            this.Lbl_select_distance_lessthan = new System.Windows.Forms.Label();
+            this.Txt_condition_distance = new System.Windows.Forms.TextBox();
+            this.DGV_selected_restaurant = new System.Windows.Forms.DataGridView();
+            this.rdb_showall = new System.Windows.Forms.RadioButton();
+            this.rdb_select_random = new System.Windows.Forms.RadioButton();
+            this.groupBox_selection = new System.Windows.Forms.GroupBox();
+            this.btn_select = new System.Windows.Forms.Button();
             this.pnl_operation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_selected_restaurant)).BeginInit();
+            this.groupBox_selection.SuspendLayout();
             this.SuspendLayout();
             // 
             // Lbl_restaurant_name
@@ -228,17 +237,94 @@
             this.pnl_operation.Size = new System.Drawing.Size(300, 303);
             this.pnl_operation.TabIndex = 19;
             // 
+            // Lbl_select_distance_lessthan
+            // 
+            this.Lbl_select_distance_lessthan.AutoSize = true;
+            this.Lbl_select_distance_lessthan.Location = new System.Drawing.Point(534, 25);
+            this.Lbl_select_distance_lessthan.Name = "Lbl_select_distance_lessthan";
+            this.Lbl_select_distance_lessthan.Size = new System.Drawing.Size(221, 12);
+            this.Lbl_select_distance_lessthan.TabIndex = 20;
+            this.Lbl_select_distance_lessthan.Text = "條件:距離<=                                m內的餐廳";
+            // 
+            // Txt_condition_distance
+            // 
+            this.Txt_condition_distance.Location = new System.Drawing.Point(605, 20);
+            this.Txt_condition_distance.Name = "Txt_condition_distance";
+            this.Txt_condition_distance.Size = new System.Drawing.Size(78, 22);
+            this.Txt_condition_distance.TabIndex = 19;
+            // 
+            // DGV_selected_restaurant
+            // 
+            this.DGV_selected_restaurant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_selected_restaurant.Location = new System.Drawing.Point(341, 96);
+            this.DGV_selected_restaurant.Name = "DGV_selected_restaurant";
+            this.DGV_selected_restaurant.RowTemplate.Height = 24;
+            this.DGV_selected_restaurant.Size = new System.Drawing.Size(432, 119);
+            this.DGV_selected_restaurant.TabIndex = 21;
+            // 
+            // rdb_showall
+            // 
+            this.rdb_showall.AutoSize = true;
+            this.rdb_showall.Location = new System.Drawing.Point(6, 24);
+            this.rdb_showall.Name = "rdb_showall";
+            this.rdb_showall.Size = new System.Drawing.Size(155, 16);
+            this.rdb_showall.TabIndex = 22;
+            this.rdb_showall.TabStop = true;
+            this.rdb_showall.Text = "顯示全部符合條件的餐廳";
+            this.rdb_showall.UseVisualStyleBackColor = true;
+            // 
+            // rdb_select_random
+            // 
+            this.rdb_select_random.AutoSize = true;
+            this.rdb_select_random.Location = new System.Drawing.Point(6, 50);
+            this.rdb_select_random.Name = "rdb_select_random";
+            this.rdb_select_random.Size = new System.Drawing.Size(179, 16);
+            this.rdb_select_random.TabIndex = 23;
+            this.rdb_select_random.TabStop = true;
+            this.rdb_select_random.Text = "從符合條件的餐廳隨機挑一個";
+            this.rdb_select_random.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_selection
+            // 
+            this.groupBox_selection.Controls.Add(this.rdb_showall);
+            this.groupBox_selection.Controls.Add(this.rdb_select_random);
+            this.groupBox_selection.Location = new System.Drawing.Point(341, 12);
+            this.groupBox_selection.Name = "groupBox_selection";
+            this.groupBox_selection.Size = new System.Drawing.Size(187, 78);
+            this.groupBox_selection.TabIndex = 24;
+            this.groupBox_selection.TabStop = false;
+            this.groupBox_selection.Text = "挑選餐廳模式";
+            // 
+            // btn_select
+            // 
+            this.btn_select.Location = new System.Drawing.Point(587, 59);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(96, 23);
+            this.btn_select.TabIndex = 25;
+            this.btn_select.Text = "挑選餐廳";
+            this.btn_select.UseVisualStyleBackColor = true;
+            this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 390);
+            this.Controls.Add(this.btn_select);
+            this.Controls.Add(this.groupBox_selection);
+            this.Controls.Add(this.DGV_selected_restaurant);
+            this.Controls.Add(this.Txt_condition_distance);
+            this.Controls.Add(this.Lbl_select_distance_lessthan);
             this.Controls.Add(this.pnl_operation);
             this.Name = "Menu";
             this.Text = "Menu";
             this.pnl_operation.ResumeLayout(false);
             this.pnl_operation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_selected_restaurant)).EndInit();
+            this.groupBox_selection.ResumeLayout(false);
+            this.groupBox_selection.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -263,6 +349,13 @@
         private System.Windows.Forms.Label Lbl_RestaurantID;
         private System.Windows.Forms.TextBox Txt_RestaurantID;
         private System.Windows.Forms.Panel pnl_operation;
+        private System.Windows.Forms.Label Lbl_select_distance_lessthan;
+        private System.Windows.Forms.TextBox Txt_condition_distance;
+        private System.Windows.Forms.DataGridView DGV_selected_restaurant;
+        private System.Windows.Forms.RadioButton rdb_showall;
+        private System.Windows.Forms.RadioButton rdb_select_random;
+        private System.Windows.Forms.GroupBox groupBox_selection;
+        private System.Windows.Forms.Button btn_select;
     }
 }
 

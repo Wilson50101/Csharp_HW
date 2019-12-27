@@ -116,5 +116,26 @@ namespace NCKU_Eat
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btn_select_Click(object sender, EventArgs e)
+        {
+            float distance_condition=float.Parse(Txt_condition_distance.Text);
+            if (rdb_showall.Checked==true)
+            {
+                var selected_result = from r in resDB.餐廳
+                                      where r.距離<=distance_condition
+                                      orderby r.距離
+                                      select r;
+                DGV_selected_restaurant.DataSource = selected_result.ToList();
+            }
+            if (rdb_select_random.Checked == true)
+            {
+                var selected_result = (from r in resDB.餐廳
+                                      where r.距離 <= distance_condition
+                                      orderby Guid.NewGuid()
+                                      select r).Take(1);
+                DGV_selected_restaurant.DataSource = selected_result.ToList();
+            }
+        }
     }
 }
