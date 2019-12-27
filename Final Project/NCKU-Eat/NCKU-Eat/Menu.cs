@@ -119,6 +119,9 @@ namespace NCKU_Eat
 
         private void btn_select_Click(object sender, EventArgs e)
         {
+            //防止Txt_condition_distance.Text為空時會出錯
+            if (Txt_condition_distance.Text == "")
+                return;
             float distance_condition=float.Parse(Txt_condition_distance.Text);
             if (rdb_showall.Checked==true)
             {
