@@ -323,6 +323,7 @@
             this.web_map.Location = new System.Drawing.Point(341, 225);
             this.web_map.MinimumSize = new System.Drawing.Size(20, 20);
             this.web_map.Name = "web_map";
+            this.web_map.ScriptErrorsSuppressed = true;
             this.web_map.Size = new System.Drawing.Size(757, 311);
             this.web_map.TabIndex = 26;
             // 
